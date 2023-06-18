@@ -76,27 +76,76 @@
           </svg>
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu">
-            <svg
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
+          <button class="modal__btn menu-toggle js-close-menu" type="button">
+            <svg class="modal__icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
 
-          <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+          <ul class="header__menu-list mobile list">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-link mobile link active first"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link mobile link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link mobile link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="header__address mobile">
+            <ul class="header__contact-list list">
+              <li class="header_contact-item">
+                <a
+                  class="header__contact-link mobile link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="header_contact-item">
+                <a
+                  class="header__contact-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="team__icon-list mobile">
+            <li class="team-icon-item">
+              <a href="#" class="team-icon-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-icon-item">
+              <a href="#" class="team-icon-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-icon-item">
+              <a href="#" class="team-icon-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-icon-item">
+              <a href="#" class="team-icon-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -160,7 +209,7 @@
                 </svg>
               </div>
               <h3 class="details__menu-title">Technologies</h3>
-              <p class="details__menu-text">
+              <p class="details__menu-text mobile">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -426,7 +475,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__inner">
-        <div class="footer__info">
+        <div class="footer__info footer__inner-element">
           <a class="logo footer__logo link" href="./index.html"
             >Web<span class="logo__footer-element">Studio</span></a
           >
@@ -435,7 +484,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer__social">
+        <div class="footer__social footer__inner-element">
           <p class="footer__social-text">Social media</p>
           <ul class="footer__social-list">
             <li class="footer__social-item">
@@ -468,7 +517,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__form">
+        <div class="footer__form footer__inner-element">
           <p class="footer__input-text">Subscribe</p>
           <form class="footer__input">
             <label class="footer__label">
@@ -573,7 +622,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
