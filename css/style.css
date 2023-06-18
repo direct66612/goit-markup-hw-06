@@ -644,9 +644,6 @@ img {
   justify-content: center;
   text-align: center;
 }
-.footer__info {
-  /* margin-right: 120px; */
-}
 .footer__social-list {
   display: flex;
   gap: 16px;
