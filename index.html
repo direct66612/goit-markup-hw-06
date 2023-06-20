@@ -103,14 +103,14 @@
             <ul class="header__contact-list list">
               <li class="header_contact-item">
                 <a
-                  class="header__contact-link mobile link"
+                  class="header__contact-link phone link"
                   href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="header_contact-item">
                 <a
-                  class="header__contact-link link"
+                  class="header__contact-link mail link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -118,28 +118,28 @@
             </ul>
           </address>
           <ul class="team__icon-list mobile">
-            <li class="team-icon-item">
+            <li class="team-icon-item mobile">
               <a href="#" class="team-icon-link">
                 <svg class="team-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-inst"></use>
                 </svg>
               </a>
             </li>
-            <li class="team-icon-item">
+            <li class="team-icon-item mobile">
               <a href="#" class="team-icon-link">
                 <svg class="team-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="team-icon-item">
+            <li class="team-icon-item mobile">
               <a href="#" class="team-icon-link">
                 <svg class="team-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="team-icon-item">
+            <li class="team-icon-item mobile">
               <a href="#" class="team-icon-link">
                 <svg class="team-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-linkedin"></use>
@@ -254,6 +254,10 @@
           <ul class="team__images-list list">
             <li class="team__images-item">
               <img
+                srcset="
+                  ./images/team-img-1.jpg    1x,
+                  ./images/team-img-1@2x.jpg 2x
+                "
                 src="./images/team-img-1.jpg"
                 alt="people"
                 class="team__images-img"
@@ -296,6 +300,10 @@
             </li>
             <li class="team__images-item">
               <img
+                srcset="
+                  ./images/team-img-2.jpg    1x,
+                  ./images/team-img-2@2x.jpg 2x
+                "
                 src="./images/team-img-2.jpg"
                 alt="people"
                 class="team__images-img"
@@ -338,6 +346,10 @@
             </li>
             <li class="team__images-item">
               <img
+                srcset="
+                  ./images/team-img-3.jpg    1x,
+                  ./images/team-img-3@2x.jpg 2x
+                "
                 src="./images/team-img-3.jpg"
                 alt="people"
                 class="team__images-img"
@@ -380,6 +392,10 @@
             </li>
             <li class="team__images-item">
               <img
+                srcset="
+                  ./images/team-img-4.jpg    1x,
+                  ./images/team-img-4@2x.jpg 2x
+                "
                 src="./images/team-img-4.jpg"
                 alt="people"
                 class="team__images-img"
@@ -624,6 +640,12 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
